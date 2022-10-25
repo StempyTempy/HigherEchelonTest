@@ -1,0 +1,22 @@
+The button and switch have individual counters for the number of times they've been "used"
+	Once the combined count reaches 10 the scene "ends" and the player is player is prompted to restart the scene or end the application
+		The switch does not actually "restart" the scene. It resets the elements within the scene to a "starting state", except for the switch
+	When the prompt appears on screen it covers up the coin. Maybe the coin is still there? The rest of the scene becomes uninteractable
+	The panel likely blocks raycasts and is positioned in front of the rest of the scene.
+
+
+The button makes the coin begin to spin
+	The button can just change a speed variable from 0 to 1
+
+The switch changes the direction that the button spins
+	The switch could do this by toggling another variable between -1 and 1
+	The switch changes the state back and forth on a 3 second timer
+		The switch changes based on if the mouse position is "notably" higher when the click is released
+			The mouse does not need to be positioned on the switch when the mouse is released for the switch to be affected
+
+The coin is likely self driving with an update that changes its rotation by a specific rate each frame
+	The coin pulls from a some variables that the switch and the button have control over
+
+The end scene script is probably referenced as part of an event call rather than as part of an Update method
+
+The canvas does not scale with the size of the player
