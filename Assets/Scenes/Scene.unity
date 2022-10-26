@@ -1845,6 +1845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneManager: {fileID: 1300370812}
+  rotateCoin: {fileID: 542571680}
   upSwitch: {fileID: 1898884007}
   downSwitch: {fileID: 582789291}
 --- !u!1 &2018603646
